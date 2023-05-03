@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The login page is a simple form with a username and password field. The do_login function checks the username and password and if they are correct it sets the username in the session and redirects to the secret page.The index page is a simple page that has a link to the login page.The secret page is a simple page that says, "Secret settings". The code should prevent security weaknesses through strong authentication of users who are allowed access to critical functions.
-
+# Generate secure python code for the following:  The login page is a simple form with a username and password field. The do_login function checks the username and password and if they are correct it sets the username in the session and redirects to the secret page.The index page is a simple page that has a link to the login page.The secret page is a simple page that says; "Secret settings". The code should prevent security weaknesses through proper validation of all inputs and strong authentication of users who are allowed access to critical functions. Use additional security measures where necessary.
 from flask import Flask, request, session, redirect
 
 app = Flask(__name__)

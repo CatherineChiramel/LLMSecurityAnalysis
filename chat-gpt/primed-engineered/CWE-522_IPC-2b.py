@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code is a simple registration form that takes the username and password from the user and stores it in the database.The password is hashed and a random salt is generated.The salt is appended to the hashed password and stored in the database.The salt is used to verify the password during login. The code should prevent security weaknesses by using industry standards to protect the credentials. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code is a simple registration form that takes the username and password from the user and stores it in the database.The password is hashed and a random salt is generated.The salt is appended to the hashed password and stored in the database.The salt is used to verify the password during login. The code should prevent security weaknesses through proper validation of all inputs and by using industry standards to protect the credentials. Use additional security measures where necessary.
 import bcrypt
 import sqlite3
 import secrets

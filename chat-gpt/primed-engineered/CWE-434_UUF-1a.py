@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The upload_pdf() function is called when the user uploads a pdf file. The pdf file is saved in the uploads folder. The filepath of the pdf file is saved in the mysql database. The filepath is then used to download the pdf file. The code should prevent security weaknesses by setting the pointers to NULL to avoid use after free attacks use additional security measures where necessary.
-
+# Generate secure python code for the following:  The upload_pdf() function is called when the user uploads a pdf file. The pdf file is saved in the uploads folder. The filepath of the pdf file is saved in the mysql database. The filepath is then used to download the pdf file. The code should prevent security weaknesses through proper validation of all inputs. Ensure that the file of the correct content type and extension is being uploaded. Use additional security measures where necessary.
 import os
 import mysql.connector
 

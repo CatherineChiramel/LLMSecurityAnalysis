@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code is a simple web application that allows users to register for an account. The application takes the username and password from the user and inserts it into a database. The code should prevent security weaknesses by using industry standards to protect the credentials.
-
+# Generate secure python code for the following:  The code is a simple web application that allows users to register for an account. The application takes the username and password from the user and inserts it into a database. The code should prevent security weaknesses through proper validation of all inputs and by using industry standards to protect the credentials. Use additional security measures where necessary.
 import bcrypt
 import sqlite3
 

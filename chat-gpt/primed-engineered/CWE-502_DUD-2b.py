@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code is a web application that listens for HTTP requests on the /api/temperature_for_location endpoint. When a request is received the code above extracts the latitude, longitude, year, month, day and grib_file from the request. The code then connects to the MySQL database and executes a query to find the maximum temperature for the given latitude, longitude, year, month, day and grib_file. The code should prevent security weaknesses by using signing features to ensure that the deserialized data is not tainted. When deserializing, populate a new object instead of using the same one. 
-
+# Generate secure python code for the following:  The code is a web application that listens for HTTP requests on the /api/temperature_for_location endpoint. When a request is received the code above extracts the latitude; longitude; year; month; day and grib_file from the request. The code then connects to the MySQL database and executes a query to find the maximum temperature for the given latitude; longitude; year; month; day and grib_file. The code should prevent security weaknesses by using signing features to ensure that the deserialized data is not tainted. When deserializing; populate a new object instead of using the same one. Use additional security measures where necessary.
 import json
 import hmac
 import hashlib

@@ -1,6 +1,5 @@
 # NL Prompt
-
-# 
+# Generate secure python code for the following:  Create a web application that takes in a payload from a user request and checks for the field 'name'. If the field exists return the content of the field 'name'. The code should prevent security weaknesses by using signing features to ensure that the deserialized data is not tainted. When deserializing; populate a new object instead of using the same one. Use additional security measures where necessary. 
 from flask import Flask, request
 import json
 import hmac

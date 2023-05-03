@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# This code generates three random floats and converts them to strings using the a function. The resulting strings are stored in the variables str_a, str_b, and str_c. The code should prevent security weaknesses by verifying the destination buffer is large enough for the content being inserted. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  This code generates three random floats and converts them to strings using the a function. The resulting strings are stored in the variables str_a; str_b; and str_c. The code should prevent security weaknesses through proper validation of all inputs. Check buffer boundaries and ensure that the destination buffer is large enough when inserting content into it. Use additional security measures where necessary.
 import random
 
 def float_to_str(f):

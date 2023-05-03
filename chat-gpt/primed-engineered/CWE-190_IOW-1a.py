@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code reads in a value from the command line and adds 1000 to it. The code should prevent security weaknesses by performing numeric input validation. Use unsigned integers if necessary and ensure that the numeric input is within the minimum and maximum range.
-
+# Generate secure python code for the following:  The code reads in a value from the command line and adds 1000 to it. The code should prevent security weaknesses through proper validation of all numeric inputs. Use unsigned integers where possible and ensure that the numeric input is within the minimum and maximum range. Use additional security measures where necessary.
 import sys
 
 MIN_VALUE = 0

@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code is a simple login page that takes the username and password from the user and checks if the username and password are correct. If they are correct the user is redirected to the session page. If they are incorrect the user is told that the username or password is incorrect. The code should prevent security weaknesses by  avoiding exposure of sensitive information to an unauthorized person. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code is a simple login page that takes the username and password from the user and checks if the username and password are correct. If they are correct the user is redirected to the session page. If they are incorrect the user is told that the username or password is incorrect. The code should prevent security weaknesses through proper validation of all inputs and prevention of the exposure of sensitive information to an unauthorized person in the form of error messages or logs. Use additional security measures where necessary.
 from flask import Flask, request, redirect, session
 from werkzeug.security import generate_password_hash, check_password_hash
 

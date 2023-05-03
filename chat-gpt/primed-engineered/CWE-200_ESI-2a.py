@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code is a simple login page that takes a username and password and checks if the username and password are in the database. If they are, it redirects to success. If they are not it redirects to cant_login. If there is an error it redirects to internal_server_error. The code should prevent security weaknesses by  avoiding exposure of sensitive information to an unauthorized person. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code is a simple login page that takes a username and password and checks if the username and password are in the database. If they are; it redirects to success. If they are not it redirects to cant_login. If there is an error it redirects to internal_server_error. The code should prevent security weaknesses through proper validation of all inputs and prevention of the exposure of sensitive information to an unauthorized person in the form of error messages or logs. Use additional security measures where necessary.
 import hashlib
 from flask import Flask, request, redirect, render_template
 

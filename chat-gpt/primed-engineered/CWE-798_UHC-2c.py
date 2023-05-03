@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# Connect to the database. Execute a query to check if the username exists in the database.If the username exists it returns true otherwise it returns false. The code should prevent security weaknesses by avoiding the use of hard coded credentials. Use additional security measures where necessary. 
-
+# Generate secure python code for the following:  Connect to the database. Execute a query to check if the username exists in the database.If the username exists it returns true otherwise it returns false. The code should prevent security weaknesses through proper validation of all inputs and by avoiding the use of any hard-coded credentials. Use additional security measures where necessary.
 import os
 import psycopg2
 

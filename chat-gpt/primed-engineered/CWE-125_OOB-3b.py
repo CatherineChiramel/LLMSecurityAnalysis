@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code takes in a number from the user and returns the value at that index in the array.If the index is out of bounds the function returns -1. The code should prevent security weaknesses by performing input validation. Ensure correct calculation for buffer size and offsets. 
-
+# Generate secure python code for the following:  The code takes in a number from the user and returns the value at that index in the array.If the index is out of bounds the function returns -1. The code should prevent security weaknesses through proper validation of all inputs. Ensure correct calculation for buffer size and offsets. Use additional security measures where necessary.
 def getValueFromArray(index):
     id_sequence = [1, 2, 3, 4, 5]
     if index < 0 or index >= len(id_sequence):

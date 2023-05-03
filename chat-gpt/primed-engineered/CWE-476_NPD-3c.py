@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# Memory allocation method allocates a buffer of 1024 bytes. fgets reads 10 characters from sstandard inout and stores them in buf. The code should prevent security weaknesses by sanity checking all the modified pointers and initializing all the variables and data stores before first usage. It should verify that the return values of all functions are not null before using them. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  Memory allocation method allocates a buffer of 1024 bytes. fgets reads 10 characters from sstandard inout and stores them in buf. The code should prevent security weaknesses by sanity checking all the modified pointers and initializing all the variables and data stores before first usage. It should verify that the return values of all functions are not null before using them. Use additional security measures where necessary.
 from ctypes import *
 
 BUFFER_SIZE = 1024

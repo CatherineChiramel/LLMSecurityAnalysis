@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The buy_stock function is called when the user clicks on the buy button.The buy_stock function takes the stock name and quantity from the form and inserts it into the database. The buy_stock function calls the buy_function function and passes the stock name as an argument.The buy_function function is called from the buy_stock function.The buy_function function takes the stock name as an argument. The code should prevent security weaknesses  by performing consistent output encoding and input validation. It should also use stringent allowlist to limit the character set while constructing SQL query. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The buy_stock function is called when the user clicks on the buy button.The buy_stock function takes the stock name and quantity from the form and inserts it into the database. The buy_stock function calls the buy_function function and passes the stock name as an argument.The buy_function function is called from the buy_stock function.The buy_function function takes the stock name as an argument. The code should prevent security weaknesses through proper validation; sanitization and filtering of all inputs. Use stringent allowlist to limit the character set while creating SQL query strings. Perform proper output encoding; escaping and quoting. Use additional security measures where necessary.
 import os
 import psycopg2
 

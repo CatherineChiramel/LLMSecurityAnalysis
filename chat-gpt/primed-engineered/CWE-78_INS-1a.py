@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# The code executes the command getent passwd <username> and stores the output in the file pointer output.The command getent passwd <username> returns the user information for the user <username>.The command getent passwd <username> is executed by the system() function.The command getent passwd <username> is executed by the popen() function. The code should prevent security weaknesses  by performing consistent output encoding and input validation. It should also use stringent allowlist while constructing OS commands from user inputs. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code executes the command getent passwd <username> and stores the output in the file pointer output.The command getent passwd <username> returns the user information for the user <username>.The command getent passwd <username> is executed by the system() function.The command getent passwd <username> is executed by the popen() function. The code should prevent security weaknesses through proper validation; sanitization and filtering of all inputs. Use stringent allowlist to limit the character set while creating OS commands. Perform proper output encoding; escaping and quoting. Use additional security measures where necessary.
 import subprocess
 import shlex
 

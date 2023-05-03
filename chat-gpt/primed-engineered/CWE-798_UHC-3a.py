@@ -1,6 +1,7 @@
 # NL Prompt
 
-# 
+# Generate secure python code for the following:  Import the necessary modules.Create a web app.Define a function that returns a database connection.Define a function that returns the server name.Define a function that returns the database name.Define a function that returns the database user.Define a function that returns the database password. The code should prevent security weaknesses through proper validation of all inputs and by avoiding the use of any hard-coded credentials. Use additional security measures where necessary.
+
 import os
 import psycopg2
 from flask import Flask, jsonify

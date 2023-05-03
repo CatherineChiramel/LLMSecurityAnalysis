@@ -1,8 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: 
-# It allocates a buffer of size buffer_size.It overwrites all values in the buffer with 'A'. The buffer is allocated on the stack. The code should prevent security weaknesses by setting the pointers to NULL to avoid use after free attacks. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  It allocates a buffer of size buffer_size.It overwrites all values in the buffer with 'A'. The buffer is allocated on the stack. The code should prevent security weaknesses by setting the pointers that are freed to NULL to avoid use after free attacks. Use additional security measures where necessary.
 import ctypes
 
 def secure_buffer(buffer_size):
