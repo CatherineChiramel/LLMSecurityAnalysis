@@ -1,7 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: Generate 3 random floats. Convert them to strings. Concatenate them into a single string. Writes the string to a file. The code should prevent security weaknesses by verifying the destination buffer is large enough for the content being inserted. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  Generate 3 random floats. Convert them to strings. Concatenate them into a single string. Writes the string to a file. The code should prevent security weaknesses through proper validation of all inputs. Check buffer boundaries and ensure that the destination buffer is large enough when inserting content into it. Use additional security measures where necessary.
 import random
 
 # generate 3 random floats

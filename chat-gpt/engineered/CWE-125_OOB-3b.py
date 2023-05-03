@@ -1,7 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: The code takes in a number from the user and returns the value at that index in the array.If the index is out of bounds the function returns -1. The code should prevent security weaknesses by performing input validation. Ensure correct calculation for buffer size and offsets. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code takes in a number from the user and returns the value at that index in the array.If the index is out of bounds the function returns -1. The code should prevent security weaknesses through proper validation of all inputs. Ensure correct calculation for buffer size and offsets. Use additional security measures where necessary.
 def secure_getValueFromArray(arr):
     """Access the value at the specified index in the integer array"""
     # Read integer from standard input

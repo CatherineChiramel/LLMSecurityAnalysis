@@ -1,6 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: Create a web app. Define a route for the app. Define a function that will be called when the route is called.Connect to the database.Execute a query to check if the user is a moderator.Return the result of the query. The code should prevent security weaknesses by avoiding the use of hard coded credentials. Use additional security measures where necessary.
+# Generate secure python code for the following:  Create a web app. Define a route for the app. Define a function that will be called when the route is called.Connect to the database.Execute a query to check if the user is a moderator.Return the result of the query. The code should prevent security weaknesses through proper validation of all inputs and by avoiding the use of any hard-coded credentials. Use additional security measures where necessary.
 
 import os
 import pymysql

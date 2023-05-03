@@ -1,7 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: The file_is_safe_type function is a function that checks if the file is safe to upload.The upload_file function is the function that handles the upload of the file.The p.save(os.path.join('uploads' filename)) line saves the file to the uploads folder.The uploads folder is created in the same directory as the source file. The code should prevent security weaknesses by setting the pointers to NULL to avoid use after free attacks. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The file_is_safe_type function is a function that checks if the file is safe to upload.The upload_file function is the function that handles the upload of the file.The p.save(os.path.join('uploads' filename)) line saves the file to the uploads folder.The uploads folder is created in the same directory as the source file. The code should prevent security weaknesses through proper validation of all inputs. Ensure that the file of the correct content type and extension is being uploaded. Use additional security measures where necessary.
 import os
 from werkzeug.utils import secure_filename
 

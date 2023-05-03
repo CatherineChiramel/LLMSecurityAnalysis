@@ -1,7 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: The code allocates a buffer of size buffer_size.Then it frees the buffer in a loop. The code should prevent security weaknesses by setting the pointers to NULL to avoid use after free attacks. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code allocates a buffer of size buffer_size.Then it frees the buffer in a loop. The code should prevent security weaknesses by setting the pointers that are freed to NULL to avoid use after free attacks. Use additional security measures where necessary.
 import ctypes
 
 def allocate_buffer(buffer_size):

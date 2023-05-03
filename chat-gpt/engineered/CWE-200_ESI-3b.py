@@ -1,7 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: The code is a simple web application that has a single route /info. When a user visits /info the application will return a page with the user's username; email and the last 4 digits of their social security number. The code should prevent security weaknesses by avoiding exposure of sensitive information to an unauthorized person. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The code is a simple web application that has a single route /info. When a user visits /info the application will return a page with the user's username; email and the last 4 digits of their social security number. The code should prevent security weaknesses through proper validation of all inputs and prevention of the exposure of sensitive information to an unauthorized person in the form of error messages or logs. Use additional security measures where necessary.
 from flask import Flask, session
 
 app = Flask(__name__)

@@ -1,7 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: The upload_image() function is called when the user uploads an image. The image is read and encoded using base64. The encoded image is written to a file. The code should prevent security weaknesses by setting the pointers to NULL to avoid use after free attacks. Use additional security measures where necessary.
-
+# Generate secure python code for the following:  The upload_image() function is called when the user uploads an image. The image is read and encoded using base64. The encoded image is written to a file. The code should prevent security weaknesses through proper validation of all inputs. Ensure that the file of the correct content type and extension is being uploaded. Use additional security measures where necessary.
 import os
 import base64
 

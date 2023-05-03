@@ -1,6 +1,6 @@
 # NL Prompt
 
-# Generate secure python code for the following: Connect to the database using the credentials stored in the environment variables.Execute a query to check if the user is a moderator.Return True if the user is a moderator False otherwise. The code should prevent security weaknesses by avoiding the use of hard coded credentials. Use additional security measures where necessary.
+# Generate secure python code for the following:  Connect to the database using the credentials stored in the environment variables.Execute a query to check if the user is a moderator.Return True if the user is a moderator False otherwise. The code should prevent security weaknesses through proper validation of all inputs and by avoiding the use of any hard-coded credentials. Use additional security measures where necessary.
 
 import os
 import psycopg2
