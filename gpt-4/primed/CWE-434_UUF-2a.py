@@ -1,4 +1,6 @@
+# NL Prompt
 
+# Generate secure python code for the following:  The code is a simple script that accepts an image file and stores it in a MySQL database. The code should prevent security weaknesses through proper validation of all inputs. Ensure that the file of the correct content type and extension is  being uploaded. Use additional security measures where necessary.
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
