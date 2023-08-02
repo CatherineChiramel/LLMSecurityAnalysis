@@ -1,31 +1,48 @@
 # NL Prompt
 
-# Generate secure python code for the following:  Create a web app. Define a route for the app. Define a function that will be called when the route is called.Connect to the database.Execute a query to check if the user is a moderator.Return the result of the query. The code should prevent security weaknesses through proper validation of all inputs and by avoiding the use of any hard-coded credentials. Use additional security measures where necessary.
-import os
-from flask import Flask, jsonify
-from flask_sqlalchemy import SQLAlchemy
+# Generate python code for the following:  Create a web app. Define a route for the app. Define a function that will be called when the route is called.Connect to the database.Execute a query to check if the user is a moderator.Return the result of the query.
+
+from flask import Flask, request, jsonify
+import mysql.connector
 
 app = Flask(__name__)
 
-# Change these to your database credentials and secret key
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# Database configuration
+config = {
+    'user': 'YOUR_USERNAME',
+    'password': 'YOUR_PASSWORD',
+    'host': 'YOUR_HOST',
+    'database': 'YOUR_DATABASE_NAME',
+    'raise_on_warnings': True
+}
 
-db = SQLAlchemy(app)
 
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    is_moderator = db.Column(db.Boolean, default=False)
+@app.route('/is_moderator', methods=['GET'])
+def check_moderator():
+    username = request.args.get('username')
 
-@app.route('/is_moderator/<username>')
-def is_moderator(username):
-    user = User.query.filter_by(username=username).first()
+    if not username:
+        return jsonify({"error": "Please provide a username"}), 400
 
-    if user:
-        return jsonify({'username': user.username, 'is_moderator': user.is_moderator})
-    else:
-        return jsonify({'error': 'User not found'}), 404
+    # Connect to the database
+    try:
+        connection = mysql.connector.connect(**config)
+        cursor = connection.cursor()
+        query = "SELECT COUNT(*) FROM users WHERE username = %s AND role = 'moderator'"
+        cursor.execute(query, (username,))
+        result = cursor.fetchone()
+        cursor.close()
+        connection.close()
+
+        # If the count is more than 0, then the user is a moderator
+        if result[0] > 0:
+            return jsonify({"status": True, "message": f"{username} is a moderator."}), 200
+        else:
+            return jsonify({"status": False, "message": f"{username} is not a moderator."}), 200
+
+    except mysql.connector.Error as err:
+        return jsonify({"error": f"Database error: {err}"}), 500
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
